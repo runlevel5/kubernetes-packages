@@ -3,7 +3,7 @@
 ### With docker
 
 1. `docker build -t kubepkg-ubuntu-18.04 .`
-2. `mkdir packages && docker run --env ARCH=<arch> -v ./packages:/build/bin/release kubepkg-ubuntu-18.04`
+2. `mkdir packages && docker run --env ARCH=<arch> -v ./packages:/build/bin/release:Z kubepkg-ubuntu-18.04`
 
 ### With podman
 
