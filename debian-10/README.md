@@ -3,7 +3,7 @@
 ### With docker
 
 1. `docker build -t kubepkg-debian-10 .`
-2. `mkdir packages && docker run --env ARCH=<arch> -v ./packages:/build/bin/release kubepkg-debian-10`
+2. `mkdir packages && docker run --env ARCH=<arch> -v ./packages:/build/bin/release:Z kubepkg-debian-10`
 
 ### With podman
 
