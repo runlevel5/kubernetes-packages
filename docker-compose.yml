@@ -1,7 +1,9 @@
 version: '3.4'
 services:
-  build_deb:
+  build:
     build:
       context: .
+    environment:
+    - ARCH
     volumes:
     - .:/build/bin/release:Z

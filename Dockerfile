@@ -12,7 +12,7 @@ RUN git clone --quiet --branch $KUBEPKG_VERSION https://github.com/kubernetes/re
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND noninteractive
 COPY --from=kubepkg /build/kubepkg /usr/local/bin/
-ENV ARCH amd64 # default
+ENV ARCH # amd64|ppc64le
 ENV BUILD_PATH /build
 ENV KUBEPKG_VERSION v0.4.0
 RUN mkdir -p $BUILD_PATH && chmod -R 777 "$BUILD_PATH"

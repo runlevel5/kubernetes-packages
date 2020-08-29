@@ -8,6 +8,8 @@ They can be used on both Debian and Ubuntu
 
 ### How to build?
 
+Ensure you have `docker` and `docker-compose` installed
+
 ```
-docker compose up
+ARCH=[amd64|ppc64le] make build
 ```
